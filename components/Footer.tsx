@@ -31,11 +31,12 @@ export default async function Footer() {
         <div>
           <a
             // href={`mailto:${settings.metadata.email}`}
-            href={`mailto:ethanarinaitwe36@gmail.com`}
+            target="blank"
+            href="mailto:ethanarinaitwe36@gmail.com"
             className={buttonVariants({ variant: "outline" })}
           >
             <MailIcon className="w-4 inline-block mr-2" />
-            Email us
+            Email Us
           </a>
         </div>
         {false && (
