@@ -54,7 +54,7 @@ export async function NavMenu({
           })}
       </div>
       {/* Mobile */}
-      {hasMobileMenu && <MobileNav items={nav.metadata.items} />}
+      {false && hasMobileMenu && <MobileNav items={nav.metadata.items} />}
     </div>
   );
 }
