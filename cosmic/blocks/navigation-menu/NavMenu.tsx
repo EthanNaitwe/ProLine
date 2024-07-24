@@ -30,15 +30,7 @@ export async function NavMenu({
       <div className={hasMobileMenu ? "hidden md:block" : ""}>
         {nav.metadata.items
           .filter(
-            (item: ItemType) =>
-              ![
-                "/work",
-                "/services",
-                "/events",
-                "/blog",
-                "/",
-                "/about",
-              ].includes(item.link)
+            (item: ItemType) => !["/work", "/services"].includes(item.link)
           )
           .map((item: ItemType) => {
             return (
@@ -54,7 +46,7 @@ export async function NavMenu({
           })}
       </div>
       {/* Mobile */}
-      {false && hasMobileMenu && <MobileNav items={nav.metadata.items} />}
+      {hasMobileMenu && <MobileNav items={nav.metadata.items} />}
     </div>
   );
 }
